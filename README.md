@@ -33,3 +33,8 @@ lrwxrwxrwx 1 root root 66 Dec 31  1969 /home/rick/.nix-profile/bin/make
 [Nix Reference](https://nixos.org/manual/nix/stable/)
 [Nix as a homebrew replacement](https://sandstorm.de/de/blog/post/my-first-steps-with-nix-on-mac-osx-as-homebrew-replacement.html)
 
+
+## Road Map
+* Add `oh-my-zsh`
+* Explore how project specific `flake.nix` interacts with the `nix-rick` profile.
+
