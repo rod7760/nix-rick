@@ -48,7 +48,7 @@
         # hatch # TODO fails for some reason
 
         # OCaml
-        opam
+        # opam # TODO see readme for more 
         ocaml
         dune_3
         ocamlformat
