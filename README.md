@@ -40,3 +40,4 @@ lrwxrwxrwx 1 root root 66 Dec 31  1969 /home/rick/.nix-profile/bin/make
 * Explore how project specific `flake.nix` interacts with the `nix-rick` profile.
 * See if rustup can be automated
 * Add my dotfiles to this?
+* Install xclip 
