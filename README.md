@@ -10,6 +10,11 @@ My attempt at managing my packages with nix.
 * Configures nix
 * Installs packages into a profile.
 
+## Uninstall
+```
+nix profile remove --all
+```
+
 ## Concepts
 `flakes`
 * dir with `flake.nix` and `flake.lock`.
