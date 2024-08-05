@@ -1,13 +1,14 @@
 # `./setup.sh`
 
-# install nix
-if [ ! -d "/nix" ]; then
-    sudo apt-get install curl
-    sudo curl -L https://nixos.org/nix/install | sh -s -- --daemon
-fi
+# TODO should prob do zsh install here
 
-mkdir -p ~/.config/nix
-echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+# TODO need to conditionally do a lot of this stuff
+# install devbox
+curl -fsSL https://get.jetify.com/devbox | bash
+# create shell
+devbox global install
 
-# install packages
-nix profile install .
+# make devbox global shell
+echo "eval '$(devbox global shellenv --init-hook)'" >> ~/.bashrc
+
+

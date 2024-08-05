@@ -5,14 +5,13 @@ My attempt at managing my packages with nix.
 
 ## Usage
 `./setup.sh`
-* Gets curl
-* Gets nix
-* Configures nix
-* Installs packages into a profile.
+* Gets devbox
+* Installs packages
+* Launches dev shell 
 
 ## Uninstall
 ```
-nix profile remove --all
+TODO
 ```
 
 ## Story
@@ -24,7 +23,7 @@ I have tried many different ways to automate installing my dev environment:
 
 I'm sure that there are some other that I don't remember. All of these solutions 
 ultimatelty felt too cumbersome to maintain. I decided to give the nix package manager a try 
-after hearing good things about it. After stumbling around, I found that nix flakes were regarded as the best practice for using nix. 
+after hearing good things about it. After stumbling around, I found that nix flakes were regarded as the best practice for using nix. I made an attempt to use nix flakes and profles. 
 
 Things I hated:
 * the syntax.
@@ -51,7 +50,9 @@ I agreed. I looked for a higher level abstraction on top of nix. This led me to 
     -> /nix/store/afp0kzsyj08idy9zy1wx154nii3idalj-gnumake-4.4.1/bin/make
     ```
 
-* * These packages are installed into the `nix-rick` profile.
+## Roadmap
+* Maybe add these to global devbox shell
+* Auto make terminal source devbox shell on launch
 
 ## Resources
 [zero-to-nix](https://zero-to-nix.com)
